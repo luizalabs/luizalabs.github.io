@@ -1,0 +1,287 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>luizalabs.com</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="/theme/css/labs-bootstrap.custom.css"/>
+        <link rel="stylesheet" href="/theme/css/labs-main.css"/>
+        <link rel="stylesheet" href="/theme/css/labs-other.css"/>
+        <link rel="stylesheet" href="/theme/css/pygments.css"/>
+
+        <meta property="og:title" content="luizalabs.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://luizalabs.com/" />
+        <meta property="og:image" content="http://luizalabs.com/static/img/ll.png" />
+        <meta property="og:description" content="Projetos inovadores voltados para o varejo, sempre visando a melhoria da experiência dos consumidores online." />
+
+        <script src="/theme/js/modernizr.custom.luizalabs.min.js"></script>
+    </head>
+    <body class="no-sidebar">
+        <!--
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            [if lt IE 10]>
+        <![endif]-->
+
+        <!-- header -->
+        <div class="header-wrapper">
+            <header class="navbar navbar-default navbar-static-top navbar-luizalabs" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsedNavbarMenu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/" title="voltar para a home"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="collapsedNavbarMenu">
+                        <ul class="nav navbar-nav navbar-right header-menu-links">
+                            <!-- <li class="page-ref-home"><a href="/" class="lnk-to-page">O QUE É?</a></li> -->
+                            <!-- <li class="page-ref-projetos"><a href="/projetos/" class="lnk-to-page">PROJETOS</a></li> -->
+                            <li class="page-ref-site"><a target="_blank" href="http://luizalabs.com/" class="lnk-to-page">SITE</a></li>
+                            <li class="page-ref-bev"><a target="_blank" href="http://bev.luizalabs.com/" class="lnk-to-page">BEV</a></li>
+                            <!-- <li class="page-ref-equipe"><a href="/equipe/" class="lnk-to-page">EQUIPE</a></li> -->
+
+                            
+
+                            <!-- <li class="page-ref-contato"><a href="/contato/" class="lnk-to-page">CONTATO</a></li> -->
+                            <li class="page-ref-junte-se-a-nos"><a href="/junte-se-a-nos/" class="btn btn-luizalabs-default navbar-btn">JUNTE-SE A NÓS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- end header -->
+		
+		<!-- Main Wrapper -->
+			<div id="main-wrapper">
+				<div class="container">
+
+<div class="row">
+	<div class="12u">
+			<section>
+				<div>
+					<div class="row">
+						<div class="12u skel-cell-mainContent">
+							<!-- Content -->
+								<article class="box is-post">
+									<div class="post-infos">
+										<ul class="tags">
+											<li><a class="button" href="category/android.html">Android</a></li>
+										</ul>
+									</div>
+
+									<div class="pennant pennant-alt date">2015-05-25</div>
+									<h2>Android Wear</h2>
+									<h3>Introdução</h3>
+<p>Android Wear adota um padrão que favorece pequenas atividades. Seu apelo é fazer o usuário ser mais social, não ficar “preso” ao seu smartphone. Algo que acontece com frequencia é você recorrer ao seu smartphone para verificar uma coisa em específico (um e-mail, por exemplo) e se perder nos milhares de apps e notificações que recebe… acaba até esquecendo o primeiro motivo que o fez pegar o smartphone. Com o Android Wear você não deixaria de conversar numa roda de amigos para verificar um e-mail e acidentalmente acabar dando uma olhadinha no Facebook (se perder lá e deixar de falar com seus amigos que estão bem do seu lado).</p>
+<p>Essas micro-interações são criadas com base em padrões conhecidos pelo usuário. Cards, icones, páginas, ações, listas de seleção… Facilita o aprendizado falando a mesma lingua e favorece as interações rápidas.</p>
+<p>Exemplo do fluxo dos cards</p>
+<p><img style="max-width:100%;" src="/images/thais-andrade/2D_picker_action.png"></p>
+<h4>Android Wear - Notifications</h4>
+<p>Neste artigo abordaremos uma introdução ao desenvolvimento direcionado ao relógio com Android Wear. Uma das interações com o relógio são as notificações que você recebe no celular e que são exibidas no seu relógio.</p>
+<p>Você pode fornecer ao usuário interação com o relógio através de Actions. São botões que você coloca nas Notifications que dão a possibilidade de executar alguma ação sem ter que pegar seu smartphone do bolso. As ações podem ter interatividade por toque ou por voz.
+Neste artigo vou mostrar a interação com toques nas actions.
+Algumas imagens para você entender melhor:</p>
+<p><img style="max-width:100%;" src="/images/thais-andrade/Android-Wear-UI-actions.jpg"></p>
+<p>Crie seu projetooo:</p>
+<ul>
+<li>Acesse File&gt; New Project</li>
+<li>Informe o Application Name, Company Domain, Package Name e Project Location</li>
+<li>Clique em Next</li>
+</ul>
+<p>Na janela seguinte:</p>
+<ul>
+<li>Selecione Phone and Tablet, pode deixar com Minimum SDK API 14 mesmo.</li>
+<li>OBS: Neste projeto vamos trabalhar com notificação então por enquanto não precisamos criar o módulo Wear.</li>
+<li>Clique em Next</li>
+</ul>
+<p>Na janela para adicionar activity ao projeto selecione Blank Activity e clique em Next.
+Na janela de customização da Activity informe o Activity Name, Layout Name, Title e Menu Resource Name. Clique em Finish</p>
+<p>Após as configurações você vai ter a seguinte estrutura:</p>
+<p><img style="max-width:100%;" src="/images/thais-andrade/Android-Studio.png"></p>
+<p>Adicione duas activities para usarmos como destino de nossas ações das notifications.
+Clique com o botão direito do mouse sobre o package New-&gt;Activity-&gt;Blank Activity
+Com isso vamos adicionar uma Activity para controlar a ação de Delete e de Reply para serem o destino dos botões de nossa notificação.</p>
+<ul>
+<li>MainActivity - tem um botão para acionar a notificação</li>
+<li>DeleteEventActivity - Abre quando clicarmos em Delete </li>
+<li>ReplyEventActivity - Abre quando clicarmos em Reply</li>
+</ul>
+<p>Na MainActivity colocaremos o seguinte código para exibir a notificação com duas ações:</p>
+<div class="highlight"><pre><span class="kd">private</span> <span class="kt">void</span> <span class="nf">showNotification</span><span class="o">(){</span>
+        <span class="c1">// Intent for notification</span>
+        <span class="n">Intent</span> <span class="n">mainIntent</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Intent</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">MainActivity</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+        <span class="n">mainIntent</span><span class="o">.</span><span class="na">putExtra</span><span class="o">(</span><span class="s">&quot;click&quot;</span><span class="o">,</span> <span class="s">&quot;you clicked the notification!&quot;</span><span class="o">);</span>
+        <span class="n">PendingIntent</span> <span class="n">mainPendingIntent</span> <span class="o">=</span>
+                <span class="n">PendingIntent</span><span class="o">.</span><span class="na">getActivity</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">mainIntent</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+
+        <span class="c1">// Intent for delete Action</span>
+        <span class="n">Intent</span> <span class="n">deleteIntent</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Intent</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">DeleteEventActivity</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+        <span class="n">PendingIntent</span> <span class="n">deletePendingIntent</span> <span class="o">=</span>
+                <span class="n">PendingIntent</span><span class="o">.</span><span class="na">getActivity</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">deleteIntent</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+
+        <span class="c1">// Intent for reply Action</span>
+        <span class="n">Intent</span> <span class="n">replyIntent</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Intent</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">ReplyEventActivity</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+        <span class="n">PendingIntent</span> <span class="n">replyPendingIntent</span> <span class="o">=</span>
+                <span class="n">PendingIntent</span><span class="o">.</span><span class="na">getActivity</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">replyIntent</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+
+        <span class="c1">// Here you build your notification with the two actions</span>
+        <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">Builder</span> <span class="n">notificationBuilder</span> <span class="o">=</span>
+                <span class="k">new</span> <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="k">this</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">setSmallIcon</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">android_icon2</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">setContentTitle</span><span class="o">(</span><span class="n">EVENT_TITLE</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">setContentText</span><span class="o">(</span><span class="n">EVENT_CONTEXT_TEXT</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">setContentIntent</span><span class="o">(</span><span class="n">mainPendingIntent</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">addAction</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">delete</span><span class="o">,</span>
+                            <span class="n">getString</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">string</span><span class="o">.</span><span class="na">delete</span><span class="o">),</span> <span class="n">deletePendingIntent</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">addAction</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">reply</span><span class="o">,</span>
+                                <span class="n">getString</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">string</span><span class="o">.</span><span class="na">reply</span><span class="o">),</span> <span class="n">replyPendingIntent</span><span class="o">);</span>
+
+        <span class="c1">// Instance of the NotificationManager service</span>
+        <span class="n">NotificationManagerCompat</span> <span class="n">notificationManager</span> <span class="o">=</span>
+                <span class="n">NotificationManagerCompat</span><span class="o">.</span><span class="na">from</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+
+        <span class="c1">// Build the notification and pass to manager </span>
+        <span class="n">notificationManager</span><span class="o">.</span><span class="na">notify</span><span class="o">(</span><span class="n">NOTIFICATION_ID</span><span class="o">,</span> <span class="n">notificationBuilder</span><span class="o">.</span><span class="na">build</span><span class="o">());</span>
+    <span class="o">}</span>
+</pre></div>
+
+
+<p>No código acima definimos 3 PendingIntent para tratar as interações com a notificação. 
+É recomendável que se use NotificationManagerCompat, se usar a NotificationManager alguns recursos de WearableExtender podem não funcionar. Podemos abordar WearableExtender nos próximos artigos ;)</p>
+<p>Veja abaixo como ficou a notificação nos devices:</p>
+<p><img style="max-width:100%;" src="/images/thais-andrade/Nexus.png">
+<img style="max-width:100%;" src="/images/thais-andrade/IMG_20150409_214650.jpg">
+<img style="max-width:100%;" src="/images/thais-andrade/IMG_20150409_214700.jpg">
+<img style="max-width:100%;" src="/images/thais-andrade/IMG_20150409_214710.jpg">
+<img style="max-width:100%;" src="/images/thais-andrade/IMG_20150409_214719.jpg"></p>
+<p>Isso foi uma pequena demonstração do que você pode fazer com o relógio.</p>
+<p>Tem muito mais...</p>
+<p>Criar Watch Faces</p>
+<p><img style="max-width:100%;" src="/images/thais-andrade/DespicableMe-375x500.png">
+<img style="max-width:100%;" src="/images/thais-andrade/Pacman-500.png"></p>
+<p>Notificações com input de voz</p>
+<p><img style="max-width:100%;" src="/images/thais-andrade/voicereply.png"></p>
+<p>Adicionar páginas nas notificações</p>
+<p><img style="max-width:100%;" src="/images/thais-andrade/paging1.png">
+<img style="max-width:100%;" src="/images/thais-andrade/paging2.png"></p>
+<p>Agrupar notificações relacionadas</p>
+<p><img style="max-width:100%;" src="/images/thais-andrade/group_notifications.png"></p>
+<p>Criar apps que rodam diretamente no Watch - Wearable Apps</p>
+<p><img style="max-width:100%;" src="/images/thais-andrade/FlopsyMain.jpg"></p>
+<p>Enviar e sincronizar dados com o smartphone (Wearable Data Layer API)</p>
+<p>Detectar localização no Android Wear</p>
+<p>Uso de sensores </p>
+<p>O App de exemplo pode ser visto em:
+https://github.com/thaisandrades/wear_notification_sample</p>
+<p>Mais informações sobre desenvolvimento para Android Wear:
+https://developer.android.com/training/building-wearables.html</p>
+								</article>
+						</div>
+					</div>
+				</div>
+			</section>
+	</div>
+</div>
+
+				</div>
+			</div>
+
+		<!-- end content -->
+
+		<!-- CATEGORIES 
+			<div class="luizalabs-operation-area-section">
+		        <div class="luizalabs-operation-area-section-bubbles-container">
+		            <div class="luizalabs-operation-area-section-bubbles-container-centered">
+		                <div class="row">
+		                    <div class="operation-area-bubble-column col-xs-4">
+		                        <div class="operation-area-bubble-container">
+		                            <div class="operation-area-bubble">
+		                                <div class="bubble-icon-mobile"></div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <div class="operation-area-bubble-column col-xs-4">
+		                        <div class="operation-area-bubble-container">
+		                            <div class="operation-area-bubble">
+		                                <div class="bubble-icon-social"></div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <div class="operation-area-bubble-column col-xs-4">
+		                        <div class="operation-area-bubble-container">
+		                            <div class="operation-area-bubble">
+		                                <div class="bubble-icon-big-data"></div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		end content -->
+
+        <!-- footer -->
+        <footer class="footer-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 footer-w-ll-copyright">
+                        © <strong>2015 LUIZALABS</strong> - TODOS OS DIREITOS RESERVADOS.
+                    </div>
+                    <div class="col-sm-6 ">
+                        <div class="footer-social-links">
+                            <a href="http://twitter.com/luizalabs" target="_blank" class="footer-social-link" title="luizalabs no twitter">
+                                <span class="luizalabs-image-icons icon-twitter"></span>Follow
+                            </a>
+                            <a href="https://www.facebook.com/luizalabs" target="_blank" class="footer-social-link" title="luizalabs no facebook">
+                                <span class="luizalabs-image-icons icon-facebook"></span>Like
+                            </a>
+                            <a href="http://www.linkedin.com/groups?home=&gid=4678415&trk=anet_ug_hm&goback=%2Egmp_4678415" target="_blank" class="footer-social-link" title="luizalabs no linkedin">
+                                <span class="luizalabs-image-icons icon-linkedin"></span>Connect
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        <script src="/theme/js/jquery.min.js"></script>
+        <script src="/theme/js/parsley.min.js"></script>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          // ga('create', 'UA-48248630-1', 'luizalabs.com');
+          ga('send', 'pageview');
+
+        </script>
+
+        <script src="/theme/js/bootstrap.min.js"></script>
+        
+        <script src="/theme/js/utils.js"></script>
+        <script>
+            checkActivePage.init();
+        </script>
+        <script src="/theme/js/home-controller.js"></script>
+        <script src="/theme/js/blog-controller.js"></script>
+        <script src="/theme/js/contact-controller.js"></script>
+
+        <script>
+    		homeController.init();
+        </script>
+	</body>
+</html>

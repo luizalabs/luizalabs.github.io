@@ -1,0 +1,872 @@
+body {
+  background-color: #434358;
+  font-family: "Proxima Nova", "Heuveita Neue", Arial;
+  font-size: 12px;
+  color: #aeaeb2;
+}
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('/static/css/fonts/proximanova-regular-webfont.eot');
+  src: url('/static/css/fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/static/css/fonts/proximanova-regular-webfont.woff') format('woff'), url('/static/css/fonts/proximanova-regular-webfont.ttf') format('truetype'), url('/static/css/fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url('/static/css/fonts/proximanova-semibold-webfont.eot');
+  src: url('/static/css/fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('/static/css/fonts/proximanova-semibold-webfont.woff') format('woff'), url('/static/css/fonts/proximanova-semibold-webfont.ttf') format('truetype'), url('/static/css/fonts/proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('/static/css/fonts/proximanova-bold-webfont.eot');
+  src: url('/static/css/fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/static/css/fonts/proximanova-bold-webfont.woff') format('woff'), url('/static/css/fonts/proximanova-bold-webfont.ttf') format('truetype'), url('/static/css/fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+#main-wrapper{
+  background: #fff;
+}
+.btn-luizalabs-default {
+  background-color: #434358;
+  border-color: #7c7c8a;
+  color: #aeaeb2;
+  font-weight: bold;
+  font-size: 12px;
+}
+.btn-luizalabs-default:hover {
+  border-color: white;
+  color: white !important;
+}
+.btn-luizalabs-default:focus {
+  color: white;
+}
+.luizalabs-section-title {
+  display: block;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin: 50px 0 60px 0;
+}
+.luizalabs-page-info-wrapper {
+  max-width: 600px;
+  margin: 75px auto;
+  text-align: center;
+}
+.luizalabs-page-info-wrapper .page-title {
+  color: white;
+  font-family: "Proxima Nova", "Heuveita Neue", Arial;
+  font-size: 40px;
+  margin: 0 0 10px 0;
+}
+.luizalabs-page-info-wrapper .page-subtitle {
+  font-family: "Proxima Nova", "Heuveita Neue", Arial;
+  font-size: 16px;
+  margin: 0;
+}
+.header-wrapper {
+  background-color: #434358;
+  height: 169px;
+  border-bottom: 1px solid #5f5f71;
+  padding-top: 40px;
+}
+.navbar-luizalabs {
+  background-color: #434358;
+  border: none;
+}
+.navbar-luizalabs .navbar-brand {
+  width: 196px;
+  height: 60px;
+  padding: 0;
+  background: url('../img/luizalabs-logo.png') no-repeat center;
+}
+.navbar-luizalabs .nav {
+  margin-top: 25px;
+}
+.navbar-luizalabs .nav > li .lnk-to-page,
+.navbar-luizalabs .nav > li .lnk-to-page:visited {
+  font-weight: bold;
+  color: #aeaeb2;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.navbar-luizalabs .nav > li .lnk-to-page:hover {
+  color: white;
+}
+.navbar-luizalabs .nav > li.active .lnk-to-page,
+.navbar-luizalabs .nav > li.active .lnk-to-page:visited {
+  color: #1d8fce;
+  background-color: white;
+}
+.navbar-luizalabs .nav > li.active .btn {
+  background: transparent;
+  border-color: white;
+  color: white !important;
+}
+.navbar-luizalabs .nav > li .btn {
+  padding: 6px 12px;
+  margin-left: 20px;
+}
+.navbar-luizalabs.navbar-default .navbar-toggle {
+  background: none !important;
+  outline: none;
+}
+@media (min-width: 992px) {
+  .navbar-luizalabs .nav > li .lnk-to-page,
+  .navbar-luizalabs .nav > li .lnk-to-page:visited {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-luizalabs .nav > li.active .lnk-to-page,
+  .navbar-luizalabs .nav > li.active .lnk-to-page:visited {
+    color: white;
+    background-color: transparent;
+  }
+}
+@media (max-width: 768px) {
+  .header-wrapper {
+    height: 110px;
+    padding-top: 20px;
+  }
+  .navbar-luizalabs .navbar-brand {
+    margin-left: 15px;
+  }
+  .navbar-luizalabs .nav {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .navbar-luizalabs .nav > li .btn {
+    margin: 20px 14px 0 14px;
+  }
+  .navbar-luizalabs .navbar-toggle {
+    margin-top: 22px;
+  }
+  .navbar-luizalabs .navbar-collapse {
+    border-top: none;
+    box-shadow: none;
+    border-bottom: 1px solid #5f5f71;
+    -moz-box-shadow: 0px 15px 15px black;
+    -webkit-box-shadow: 0px 15px 15px black;
+    box-shadow: 0px 15px 15px black;
+  }
+}
+.footer-wrapper {
+  margin: 0 0 50px 0;
+  padding-top: 45px;
+  border-top: 1px solid #5f5f71;
+}
+.footer-wrapper .footer-w-ll-copyright {
+  color: white;
+  padding-top: 10px;
+}
+@media (min-width: 768px) {
+  .footer-wrapper .footer-social-links {
+    float: right;
+  }
+}
+.footer-wrapper a.footer-social-link,
+.footer-wrapper a.footer-social-link:visited {
+  color: #aeaeb2;
+  margin-left: 55px;
+}
+.footer-wrapper a.footer-social-link:first-child,
+.footer-wrapper a.footer-social-link:visited:first-child {
+  margin-left: 0;
+}
+@media (min-width: 992px) {
+  .footer-wrapper a.footer-social-link,
+  .footer-wrapper a.footer-social-link:visited {
+    margin-left: 40px;
+  }
+}
+.footer-wrapper a.footer-social-link:hover {
+  text-decoration: none;
+  color: white;
+}
+.footer-wrapper .luizalabs-image-icons {
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+}
+.footer-wrapper .luizalabs-image-icons.icon-twitter {
+  width: 20px;
+  height: 16px;
+  top: 3px;
+  background: url('../img/icon-twitter.png') no-repeat center;
+}
+.footer-wrapper .luizalabs-image-icons.icon-facebook {
+  width: 20px;
+  height: 21px;
+  top: 6px;
+  background: url('../img/icon-facebook.png') no-repeat center;
+}
+.footer-wrapper .luizalabs-image-icons.icon-linkedin {
+  width: 20px;
+  height: 20px;
+  top: 6px;
+  background: url('../img/icon-linkedin.png') no-repeat center;
+}
+.projects-slider-wrapper {
+  width: auto;
+  height: auto;
+  padding: 70px 0 30px 0;
+  background: url('../img/products-slider-bg.png') no-repeat right bottom;
+}
+.projects-slider-wrapper .carousel-indicators {
+  margin-bottom: 0;
+  bottom: 0;
+}
+.projects-slider-wrapper .carousel-indicators > li {
+  background-color: #2f2f3d;
+  border: none;
+  margin: 5px 1px 1px 1px;
+}
+.projects-slider-wrapper .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  margin: 5px 1px 1px 1px;
+  background-color: white;
+}
+.projects-slider-wrapper .carousel-indicators > li:first-child,
+.projects-slider-wrapper .carousel-indicators > li.active:first-child {
+  margin-top: 1px;
+}
+@media (min-width: 768px) {
+  .projects-slider-wrapper .carousel-indicators {
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: auto;
+    bottom: auto;
+    right: 20px;
+    margin-left: 0;
+  }
+  .projects-slider-wrapper .carousel-indicators > li {
+    display: block;
+  }
+}
+.projects-slider-wrapper .ps-slide-title {
+  font-family: "Proxima Nova", "Heuveita Neue", Arial;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+.projects-slider-wrapper .ps-slide-info-text {
+  max-width: 650px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  font-size: 16px;
+}
+.projects-slider-wrapper .ps-slide-about-project {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.projects-slider-wrapper .img-responsive {
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .projects-slider-wrapper {
+    background: none;
+  }
+}
+.about-luizalabs-section {
+  width: auto;
+  background-color: #363646;
+}
+.about-luizalabs-section .about-luizalabs-section-inner {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.about-luizalabs-section .about-luizalabs-section-question {
+  color: white;
+  margin-top: 0;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Proxima Nova", "Heuveita Neue", Arial;
+}
+.about-luizalabs-section .about-luizalabs-section-answer {
+  font-size: 20px;
+  color: #aeaeb2;
+  text-align: justify;
+}
+.luizalabs-leadg-conversion-section {
+  background-color: #3c3c4f;
+  padding: 50px 0;
+}
+.luizalabs-leadg-conversion-section .luizalabs-leadg-conversion-section-column:first-child {
+  padding-bottom: 20px;
+}
+.luizalabs-leadg-conversion-section .luizalabs-leadg-conversion-section-icon {
+  display: block;
+  margin: 0 auto;
+}
+.luizalabs-leadg-conversion-section .luizalabs-leadg-conversion-section-title {
+  display: block;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 25px 0;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+.luizalabs-leadg-conversion-section .luizalabs-leadg-conversion-section-description {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+}
+.luizalabs-leadg-conversion-section .luizalabs-leadg-conversion-section-icon-lead-generation,
+.luizalabs-leadg-conversion-section .luizalabs-leadg-conversion-section-icon-conversion {
+  display: block;
+  margin: 0 auto;
+}
+.luizalabs-leadg-conversion-section .luizalabs-leadg-conversion-section-icon-lead-generation {
+  width: 48px;
+  height: 48px;
+  background: url('../img/lead-generation-icon.png') no-repeat center;
+}
+.luizalabs-leadg-conversion-section .luizalabs-leadg-conversion-section-icon-conversion {
+  width: 50px;
+  height: 50px;
+  background: url('../img/conversion-icon.png') no-repeat center;
+}
+@media (min-width: 992px) {
+  .luizalabs-leadg-conversion-section {
+    background: url('../img/two-columns-bg.png') repeat center;
+  }
+  .luizalabs-leadg-conversion-section .luizalabs-leadg-conversion-section-column:first-child {
+    padding-bottom: 0;
+  }
+  .luizalabs-leadg-conversion-section .luizalabs-leadg-conversion-section-description.left {
+    margin-right: 50px;
+  }
+  .luizalabs-leadg-conversion-section .luizalabs-leadg-conversion-section-description.right {
+    margin-left: 50px;
+  }
+}
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container {
+  position: relative;
+  overflow: hidden;
+}
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .background-row {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  margin: 0;
+  border-color: #3c3c4f;
+}
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .luizalabs-operation-area-section-bubbles-container-centered {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-container {
+  width: 150px;
+  background-color: #434358;
+  margin: 0 auto;
+}
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-container .operation-area-bubble {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid #3c3c4f;
+  overflow: hidden;
+}
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-container.left {
+  float: left;
+}
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-container.right {
+  float: right;
+}
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-container.center {
+  margin: 0 auto;
+}
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-container .bubble-icon-mobile,
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-container .bubble-icon-big-data,
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-container .bubble-icon-social {
+  margin: 0 auto;
+  background: no-repeat center;
+}
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-container .bubble-icon-mobile {
+  width: 44px;
+  height: 64px;
+  margin-top: 26px;
+  background-image: url('../img/mobile-icon.png');
+}
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-container .bubble-icon-big-data {
+  width: 54px;
+  height: 60px;
+  margin-top: 28px;
+  background-image: url('../img/bigdata-icon.png');
+}
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-container .bubble-icon-social {
+  width: 64px;
+  height: 64px;
+  margin-top: 26px;
+  background-image: url('../img/social-icon.png');
+}
+.luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-container .operation-area-bubble-container-label {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 20px;
+}
+@media (max-width: 550px) {
+  .luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .background-row {
+    display: none;
+  }
+  .luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-column {
+    width: 100%;
+  }
+  .luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-container {
+    margin-bottom: 20px;
+  }
+  .luizalabs-operation-area-section .luizalabs-operation-area-section-bubbles-container .operation-area-bubble-container .operation-area-bubble-container-label {
+    padding-top: 10px;
+  }
+}
+.luizalabs-news-section {
+  margin-bottom: 70px;
+}
+.luizalabs-news-section .luizalabs-news {
+  margin-top: 20px;
+}
+.luizalabs-news-section .luizalabs-news:first-child {
+  margin-top: 0;
+}
+@media (min-width: 992px) {
+  .luizalabs-news-section .luizalabs-news {
+    margin-top: 0;
+  }
+}
+.luizalabs-news-section .luizalabs-news-title {
+  display: block;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+.luizalabs-news-section .luizalabs-news-body {
+  font-size: 14px;
+  margin: 0 0 20px 0;
+}
+.luizalabs-team-section .luizalabs-team-member-container {
+  margin: 0 20px 70px 20px;
+  text-align: center;
+}
+.luizalabs-team-section .team-photo {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 25px auto;
+}
+.luizalabs-team-section .ll-team-menber-name,
+.luizalabs-team-section .ll-team-job-title {
+  display: block;
+  font-weight: normal;
+  color: white;
+}
+.luizalabs-team-section .ll-team-menber-name {
+  font-size: 20px;
+  line-height: 22px;
+}
+.luizalabs-team-section .ll-team-job-title {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.luizalabs-team-section .ll-team-member-info {
+  display: block;
+  font-size: 16px;
+  margin: 0;
+}
+.luizalabs-team-section .btn-luizalabs-default {
+  margin-top: 25px;
+}
+.luizalabs-blog-header {
+  position: relative;
+}
+.luizalabs-blog-header .luizalabs-blog-search-container {
+  width: 300px;
+  position: absolute;
+  top: 82px;
+  right: 15px;
+}
+.luizalabs-blog-header .luizalabs-blog-search-container input.form-control {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-color: #7c7c8a;
+  border-right: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: white;
+  font-size: 14px;
+  padding-right: 0;
+}
+.luizalabs-blog-header .luizalabs-blog-search-container input.form-control::-webkit-input-placeholder {
+  color: #7c7c8a;
+}
+.luizalabs-blog-header .luizalabs-blog-search-container input.form-control:-moz-placeholder {
+  color: #7c7c8a;
+}
+.luizalabs-blog-header .luizalabs-blog-search-container input.form-control::-moz-placeholder {
+  color: #7c7c8a;
+}
+.luizalabs-blog-header .luizalabs-blog-search-container input.form-control:-ms-input-placeholder {
+  color: #7c7c8a;
+}
+.luizalabs-blog-header .luizalabs-blog-search-container .btn {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-color: #7c7c8a;
+  border-left: none;
+  background-color: transparent;
+  outline: none;
+}
+.luizalabs-blog-header .luizalabs-blog-search-container .glyphicon {
+  color: #7c7c8a;
+  font-weight: bold;
+  font-size: 15px;
+  top: 3px;
+}
+@media (max-width: 768px) {
+  .luizalabs-blog-header .luizalabs-page-info-wrapper {
+    margin: 75px auto 40px auto;
+  }
+  .luizalabs-blog-header .luizalabs-blog-search-container {
+    position: static;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.luizalabs-blog-posts-section {
+  color: white;
+}
+.luizalabs-blog-posts-section .ll-blog-post img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.luizalabs-blog-posts-section .ll-blog-post-title {
+  display: block;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 50px 0;
+  text-align: center;
+}
+.luizalabs-blog-posts-section .ll-blog-post-body {
+  margin: 0 auto 70px auto;
+  max-width: 680px;
+  font-size:16px;
+}
+.luizalabs-blog-posts-section .ll-blog-post-body p {
+  text-align: justify;
+  font-size: 16px;
+  margin: 30px 0 0 0;
+}
+.luizalabs-blog-posts-section .ll-blog-post-body img {
+  margin-top: 30px;
+}
+.luizalabs-blog-posts-section .ll-blog-post-body p:first-child,
+.luizalabs-blog-posts-section .ll-blog-post-body img:first-child {
+  margin-top: 0;
+}
+.luizalabs-blog-posts-section .ll-blog-post-body .ll-blog-post-footer {
+  margin-top: 50px;
+  border-top: 1px solid #7c7c8a;
+  text-align: center;
+  font-size:12px;
+}
+.luizalabs-blog-posts-section .ll-blog-post-body .ll-blog-post-footer span,
+.luizalabs-blog-posts-section .ll-blog-post-body .ll-blog-post-footer a,
+.luizalabs-blog-posts-section .ll-blog-post-body .ll-blog-post-footer a:visited {
+  color: #8c8c96;
+}
+.luizalabs-blog-posts-section .ll-blog-post-body .ll-blog-post-footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+.luizalabs-blog-posts-section .ll-blog-post-body .ll-blog-post-footer a:hover span {
+  color: white;
+}
+.luizalabs-blog-posts-section .ll-blog-post-body .ll-blog-post-footer .ll-blog-post-footer-inner {
+  padding: 0 90px;
+}
+@media (max-width: 768px) {
+  .luizalabs-blog-posts-section .ll-blog-post-body .ll-blog-post-footer .ll-blog-post-footer-inner {
+    padding: 0;
+  }
+}
+.luizalabs-blog-posts-section .ll-blog-post-body .ll-blog-post-footer .ll-blog-post-footer-element {
+  margin-top: 20px;
+}
+.luizalabs-blog-footer {
+  padding: 45px 0;
+  background-color: #3c3c4f;
+}
+.luizalabs-blog-footer a,
+.luizalabs-blog-footer a:visited,
+.luizalabs-blog-footer span {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+.luizalabs-blog-footer a .glyphicon,
+.luizalabs-blog-footer a:visited .glyphicon,
+.luizalabs-blog-footer span .glyphicon {
+  font-weight: normal;
+  font-size: 8px;
+  top: -1px;
+}
+.luizalabs-blog-footer a:hover {
+  text-decoration: none;
+}
+.luizalabs-blog-footer a:hover .glyphicon {
+  color: white;
+}
+.luizalabs-blog-footer span {
+  color: #777784;
+}
+.luizalabs-projects-section .ll-project-title {
+  font-size: 40px;
+  margin: 30px 0 30px 0;
+}
+.luizalabs-projects-section .ll-project-description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.luizalabs-projects-section .ll-project-title,
+.luizalabs-projects-section .ll-project-button-container {
+  text-align: center;
+}
+.luizalabs-projects-section img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.luizalabs-projects-section .magazinevoce {
+  background-color: #1d8fce;
+}
+.luizalabs-projects-section .magazinevoce .ll-project-title,
+.luizalabs-projects-section .magazinevoce .ll-project-description {
+  color: white;
+}
+.luizalabs-projects-section .magazinevoce img {
+  margin-top: 40px;
+}
+.luizalabs-projects-section .bob {
+  background: white;
+}
+.luizalabs-projects-section .bob .ll-project-title,
+.luizalabs-projects-section .bob .ll-project-description {
+  color: #434358;
+}
+.luizalabs-projects-section .bob img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.luizalabs-projects-section .ml-mobile {
+  background-color: #001a69;
+}
+.luizalabs-projects-section .ml-mobile .ll-project-title,
+.luizalabs-projects-section .ml-mobile .ll-project-description {
+  color: white;
+}
+.luizalabs-projects-section .ml-mobile img {
+  margin-top: 40px;
+}
+@media (min-width: 992px) {
+  .luizalabs-projects-section .ll-project-title,
+  .luizalabs-projects-section .ll-project-button-container {
+    text-align: left;
+  }
+  .luizalabs-projects-section .magazinevoce .ll-project-title {
+    margin-top: 70px;
+  }
+  .luizalabs-projects-section .bob {
+    background: url('../img/projects/bob-bg.jpg') repeat top;
+  }
+  .luizalabs-projects-section .bob .ll-project-title {
+    margin-top: 90px;
+  }
+  .luizalabs-projects-section .bob img {
+    margin: 65px auto;
+  }
+  .luizalabs-projects-section .ml-mobile .ll-project-title {
+    margin-top: 40px;
+  }
+  .luizalabs-projects-section .ml-mobile img {
+    margin-top: 90px;
+  }
+}
+@media (min-width: 1200px) {
+  .luizalabs-projects-section .magazinevoce .ll-project-title {
+    margin-top: 110px;
+  }
+  .luizalabs-projects-section .bob .ll-project-title {
+    margin-top: 110px;
+  }
+  .luizalabs-projects-section .ml-mobile .ll-project-title {
+    margin-top: 100px;
+  }
+}
+.btn-luizalabs-light-blue {
+  background-color: #1d8fce;
+  border-color: #61b1dd;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+.btn-luizalabs-light-blue:hover {
+  border-color: white;
+  color: white;
+}
+.btn-luizalabs-dark-blue {
+  background-color: #001a69;
+  border-color: #4d5f96;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+.btn-luizalabs-dark-blue:hover {
+  border-color: white;
+  color: white;
+}
+.btn-luizalabs-gray-white {
+  background-color: white;
+  border-color: #c6c6cd;
+  color: #434358;
+  font-weight: bold;
+  font-size: 12px;
+}
+.btn-luizalabs-gray-white:hover {
+  border-color: black;
+  color: black;
+}
+.luizalabs-projects-footer {
+  max-width: 600px;
+  margin: 70px auto;
+  text-align: center;
+}
+.luizalabs-projects-footer strong {
+  display: block;
+  color: white;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.luizalabs-projects-footer p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.luizalabs-contact-section {
+  max-width: 600px;
+  margin: 0 auto 70px auto;
+}
+.luizalabs-contact-section .form-row {
+  margin-top: 10px;
+}
+.luizalabs-contact-section .form-row:first-child {
+  margin-top: 0;
+}
+.luizalabs-contact-section .form-row-left {
+  margin-top: 10px;
+  width: 350px;
+  float: left;
+}
+.luizalabs-contact-section .form-row-right {
+  margin-top: 10px;
+  margin-left: 360px;
+}
+@media (max-width: 550px) {
+  .luizalabs-contact-section .form-row-left {
+    width: auto;
+    float: none;
+  }
+  .luizalabs-contact-section .form-row-right {
+    margin-left: 0;
+  }
+}
+.luizalabs-contact-section .form-control {
+  border: 1px solid #7c7c8a;
+  background-color: #434358;
+  color: white;
+}
+.luizalabs-contact-section .form-control::-webkit-input-placeholder {
+  color: #7c7c8a;
+}
+.luizalabs-contact-section .form-control:-moz-placeholder {
+  color: #7c7c8a;
+}
+.luizalabs-contact-section .form-control::-moz-placeholder {
+  color: #7c7c8a;
+}
+.luizalabs-contact-section .form-control:-ms-input-placeholder {
+  color: #7c7c8a;
+}
+.luizalabs-contact-section textarea {
+  resize: none;
+}
+.luizalabs-contact-section input[type=file] {
+  display: none;
+}
+.luizalabs-contact-section .luizalabs-contact-file-upload-info {
+  display: block;
+  color: #7c7c8a;
+}
+@media (min-width: 550px) {
+  .luizalabs-contact-section .luizalabs-contact-file-upload-info {
+    display: inline;
+    margin-left: 20px;
+  }
+}
+.luizalabs-contact-section .btn-send {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+}
+.luizalabs-contact-section .error {
+  border: 1px dashed #a94442;
+}
+.luizalabs-contact-section .error::-webkit-input-placeholder {
+  color: #a94442;
+}
+.luizalabs-contact-section .error:-moz-placeholder {
+  color: #a94442;
+}
+.luizalabs-contact-section .error::-moz-placeholder {
+  color: #a94442;
+}
+.luizalabs-contact-section .error:-ms-input-placeholder {
+  color: #a94442;
+}
+.luizalabs-contact-section .luizalabs-contact-form-warning {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 70px;
+}
+.luizalabs-contact-section .popover-content {
+  color: #434358;
+  font-weight: bold;
+}
+.luizalabs-contact-section .luizalabs-form-alert-message {
+  display: none;
+}
+.luizalabs-contact-section .luizalabs-form-alert-message .luizalabs-form-alert-message-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.white-a {
+  color:#d0d0d0;
+}
+
+.white-a:hover {
+  color:#fff;
+}

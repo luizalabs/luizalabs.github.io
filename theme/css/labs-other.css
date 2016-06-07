@@ -1,0 +1,60 @@
+div.messages {
+    background-color:#fff;
+    border-bottom: 7px solid rgb(29, 143, 206);
+    padding:20px;
+    font-size:14px;
+    width:100%;
+}
+
+div.messages ul {
+    margin-left:-8px;
+}
+
+div.messages li {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+
+div.luizalabs-operation-area-section-bubbles-container {
+    margin-bottom:30px;
+}
+
+
+.luizalabs-team-member-container {
+    margin:0 20px 35px;
+    min-height: 240px;
+}
+
+
+.luizalabs-projects-section .querodecasamento{
+    background:url(../img/projects/querodecasamento.jpg) repeat top;
+}
+
+.luizalabs-projects-section .querodecasamento .container {
+    height:400px;
+}
+
+.luizalabs-projects-section .querodecasamento .ll-project-description {
+    margin-top:184px;
+    color:#888;
+
+}
+
+.luizalabs-projects-section .querodecasamento .ll-project-title{
+    margin-top:90px;
+}
+
+.btn-luizalabs-gray-white-light{
+    background-color:#fff;
+    border-color:#c6c6cd;
+    color:#888;
+    font-weight:700;
+    font-size:12px;
+}
+
+.btn-luizalabs-gray-white-light:hover{
+    border-color:#999;
+    color:#888;
+}
